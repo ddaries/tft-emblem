@@ -1,0 +1,425 @@
+:root {
+    --bg-color: #0f1115;
+    --card-bg: #1e2328;
+    --text-primary: #f0f0f0;
+    --text-secondary: #a0a0a0;
+    --accent: #c8aa6e;
+    /* LoL Gold */
+    --accent-hover: #f0e6d2;
+    --border-radius: 8px;
+    --bronze-trait: #cd7f32;
+    --silver-trait: #c0c0c0;
+    --gold-trait: #ffd700;
+    --prismatic-trait: #e0ffff;
+    /* Diamond/Prismatic-ish */
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-image: radial-gradient(circle at top, #1c252c 0%, #0f1115 100%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1400px;
+    /* Wider container for horizontal layout */
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 15px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: var(--accent);
+    margin: 0;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.search-bar {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.search-bar input {
+    width: 60%;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 1px solid #444;
+    background-color: rgba(30, 35, 40, 0.9);
+    color: white;
+    font-size: 0.95rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.search-bar input:focus {
+    border-color: var(--accent);
+    background-color: rgba(40, 45, 50, 1);
+}
+
+/* --- Trait Grid (Bottom Section) --- */
+.traits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 15px;
+}
+
+.trait-card {
+    background-color: var(--card-bg);
+    border: 1px solid #2a2a2a;
+    border-radius: var(--border-radius);
+    padding: 12px;
+    transition: transform 0.2s;
+}
+
+.trait-card:hover {
+    transform: translateY(-2px);
+    border-color: #444;
+}
+
+.trait-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding-bottom: 8px;
+}
+
+.trait-icon {
+    width: 28px;
+    height: 28px;
+}
+
+.trait-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #e0e0e0;
+}
+
+.trait-thresholds {
+    margin-left: auto;
+    font-size: 0.75rem;
+    color: #888;
+    background: #111;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+/* --- Emblem Selector --- */
+.emblem-selector-section {
+    background-color: rgba(30, 35, 40, 0.3);
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.emblem-selector-section h2 {
+    margin: 0 0 15px 0;
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.emblem-grid {
+    display: grid;
+    grid-template-columns: repeat(11, auto);
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.emblem-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition: all 0.2s ease;
+    width: 70px;
+    background: #15191e;
+}
+
+.emblem-item:hover {
+    background-color: #252a30;
+    transform: translateY(-2px);
+}
+
+.emblem-item.selected {
+    border-color: var(--accent);
+    background-color: rgba(200, 170, 110, 0.15);
+}
+
+.emblem-item img {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 4px;
+    filter: grayscale(0.5);
+}
+
+.emblem-item:hover img,
+.emblem-item.selected img {
+    filter: grayscale(0);
+}
+
+.emblem-item span {
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+.selection-status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+#generate-btn {
+    padding: 8px 30px;
+    background: var(--accent);
+    color: #111;
+    border: none;
+    border-radius: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#generate-btn:hover:not(:disabled) {
+    background: #e0c080;
+    transform: scale(1.05);
+}
+
+#generate-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    background: #444;
+}
+
+
+/* --- COMPOSITION DISPLAY: HORIZONTAL & COMPACT --- */
+.comp-box {
+    background: linear-gradient(90deg, #1a1e24 0%, #15171a 100%);
+    border: 1px solid #333;
+    border-left: 4px solid var(--accent);
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    animation: slideUp 0.5s ease-out;
+
+    /* KEY CHANGE: Horizontal Flex Layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* Aligns items vertically in the center */
+    gap: 30px;
+    /* Space between traits section and units section */
+    justify-content: space-between;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.comp-header {
+    display: none;
+}
+
+/* LEFT SIDE: TRAITS (Compact Grid) */
+.active-traits-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: 300px;
+    /* Fixed width for traits column */
+    min-width: 250px;
+    align-content: flex-start;
+    padding-right: 20px;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.trait-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 4px 10px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.75rem;
+    height: 24px;
+}
+
+.trait-count {
+    font-family: 'Consolas', monospace;
+    font-weight: 700;
+}
+
+.trait-text {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Colors for traits */
+.trait-badge.trait-active-bronze {
+    color: var(--bronze-trait);
+    border-color: rgba(205, 127, 50, 0.3);
+}
+
+.trait-badge.trait-active-gold {
+    color: var(--gold-trait);
+    border-color: rgba(255, 215, 0, 0.3);
+    background: rgba(255, 215, 0, 0.05);
+}
+
+.trait-badge.trait-active-prismatic {
+    color: var(--prismatic-trait);
+    border-color: rgba(224, 255, 255, 0.4);
+    background: rgba(224, 255, 255, 0.1);
+    text-shadow: 0 0 5px rgba(224, 255, 255, 0.4);
+}
+
+
+/* RIGHT SIDE: UNITS (Horizontal Strip) */
+.comp-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* Force single line */
+    gap: 12px;
+    flex-grow: 1;
+    overflow-x: auto;
+    /* Allow scroll if screen is too small */
+    padding-bottom: 5px;
+    /* Space for scrollbar */
+    justify-content: flex-start;
+}
+
+/* Custom Scrollbar for unit list */
+.comp-grid::-webkit-scrollbar {
+    height: 6px;
+}
+
+.comp-grid::-webkit-scrollbar-track {
+    background: #111;
+    border-radius: 3px;
+}
+
+.comp-grid::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 3px;
+}
+
+.comp-grid::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
+
+/* Compact Unit Card */
+.comp-unit-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60px;
+    /* Smaller width */
+    flex-shrink: 0;
+    /* Prevent shrinking */
+    transition: transform 0.2s;
+    position: relative;
+}
+
+.comp-unit-card:hover {
+    transform: translateY(-5px);
+    z-index: 10;
+}
+
+.unit-image-wrapper {
+    width: 50px;
+    /* Smaller Image */
+    height: 50px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 5px;
+    border: 2px solid #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    transition: border-color 0.2s;
+}
+
+.comp-unit-card:hover .unit-image-wrapper {
+    border-color: var(--accent);
+}
+
+.unit-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.unit-name {
+    font-size: 0.65rem;
+    color: #ccc;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    font-weight: 600;
+}
+
+/* --- Unit Cost Borders --- */
+.comp-unit-card.cost-1 .unit-image-wrapper {
+    border-color: #a0a0a0 !important;
+    box-shadow: 0 0 5px rgba(160, 160, 160, 0.4);
+}
+
+.comp-unit-card.cost-2 .unit-image-wrapper {
+    border-color: #11b288 !important;
+    box-shadow: 0 0 5px rgba(17, 178, 136, 0.4);
+}
+
+.comp-unit-card.cost-3 .unit-image-wrapper {
+    border-color: #207ac7 !important;
+    box-shadow: 0 0 5px rgba(32, 122, 199, 0.4);
+}
+
+.comp-unit-card.cost-4 .unit-image-wrapper {
+    border-color: #c38bff !important;
+    box-shadow: 0 0 8px rgba(195, 139, 255, 0.5);
+}
+
+.comp-unit-card.cost-5 .unit-image-wrapper {
+    border-color: #f4d03f !important;
+    box-shadow: 0 0 10px rgba(244, 208, 63, 0.6);
+}

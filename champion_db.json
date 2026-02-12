@@ -1,0 +1,709 @@
+{
+    "Aatrox": {
+        "cost": 5,
+        "traits": [
+            "Darkin",
+            "World Ender",
+            "Slayer"
+        ]
+    },
+    "Ahri": {
+        "cost": 3,
+        "traits": [
+            "Ionia",
+            "Arcanist"
+        ]
+    },
+    "Ambessa": {
+        "cost": 4,
+        "traits": [
+            "Noxus",
+            "Vanquisher"
+        ]
+    },
+    "Anivia": {
+        "cost": 1,
+        "traits": [
+            "Freljord",
+            "Invoker"
+        ]
+    },
+    "Annie": {
+        "cost": 5,
+        "traits": [
+            "Dark Child",
+            "Arcanist"
+        ]
+    },
+    "Aphelios": {
+        "cost": 2,
+        "traits": [
+            "Targon"
+        ]
+    },
+    "Ashe": {
+        "cost": 2,
+        "traits": [
+            "Freljord",
+            "Quickstriker"
+        ]
+    },
+    "Aurelion Sol": {
+        "cost": 5,
+        "traits": [
+            "Star Forger",
+            "Targon"
+        ]
+    },
+    "Azir": {
+        "cost": 5,
+        "traits": [
+            "Shurima",
+            "Emperor",
+            "Disruptor"
+        ]
+    },
+    "Bard": {
+        "cost": 2,
+        "traits": [
+            "Caretaker"
+        ]
+    },
+    "Baron Nashor": {
+        "cost": 5,
+        "traits": [
+            "Void",
+            "Riftscourge"
+        ]
+    },
+    "Bel'Veth": {
+        "cost": 4,
+        "traits": [
+            "Void",
+            "Slayer"
+        ]
+    },
+    "Blitzcrank": {
+        "cost": 1,
+        "traits": [
+            "Zaun",
+            "Juggernaut"
+        ]
+    },
+    "Braum": {
+        "cost": 4,
+        "traits": [
+            "Freljord",
+            "Warden"
+        ]
+    },
+    "Briar": {
+        "cost": 1,
+        "traits": [
+            "Noxus",
+            "Slayer",
+            "Juggernaut"
+        ]
+    },
+    "Brock": {
+        "cost": 5,
+        "traits": [
+            "Ixtal"
+        ]
+    },
+    "Caitlyn": {
+        "cost": 1,
+        "traits": [
+            "Piltover",
+            "Longshot"
+        ]
+    },
+    "Cho'Gath": {
+        "cost": 2,
+        "traits": [
+            "Void",
+            "Juggernaut"
+        ]
+    },
+    "Darius": {
+        "cost": 3,
+        "traits": [
+            "Noxus",
+            "Defender"
+        ]
+    },
+    "Diana": {
+        "cost": 4,
+        "traits": [
+            "Targon"
+        ]
+    },
+    "Dr. Mundo": {
+        "cost": 3,
+        "traits": [
+            "Zaun",
+            "Bruiser"
+        ]
+    },
+    "Draven": {
+        "cost": 3,
+        "traits": [
+            "Noxus",
+            "Quickstriker"
+        ]
+    },
+    "Ekko": {
+        "cost": 2,
+        "traits": [
+            "Zaun",
+            "Disruptor"
+        ]
+    },
+    "Fiddlesticks": {
+        "cost": 5,
+        "traits": [
+            "Harvester",
+            "Vanquisher"
+        ]
+    },
+    "Fizz": {
+        "cost": 4,
+        "traits": [
+            "Bilgewater",
+            "Yordle"
+        ]
+    },
+    "Galio": {
+        "cost": 5,
+        "traits": [
+            "Demacia",
+            "Heroic"
+        ]
+    },
+    "Gangplank": {
+        "cost": 3,
+        "traits": [
+            "Bilgewater",
+            "Slayer",
+            "Vanquisher"
+        ]
+    },
+    "Garen": {
+        "cost": 4,
+        "traits": [
+            "Demacia",
+            "Defender"
+        ]
+    },
+    "Graves": {
+        "cost": 2,
+        "traits": [
+            "Bilgewater",
+            "Gunslinger"
+        ]
+    },
+    "Gwen": {
+        "cost": 3,
+        "traits": [
+            "Shadow Isles",
+            "Disruptor"
+        ]
+    },
+    "Illaoi": {
+        "cost": 1,
+        "traits": [
+            "Bilgewater",
+            "Bruiser"
+        ]
+    },
+    "Jarvan IV": {
+        "cost": 1,
+        "traits": [
+            "Demacia",
+            "Defender"
+        ]
+    },
+    "Jhin": {
+        "cost": 1,
+        "traits": [
+            "Ionia",
+            "Gunslinger"
+        ]
+    },
+    "Jinx": {
+        "cost": 3,
+        "traits": [
+            "Zaun",
+            "Gunslinger"
+        ]
+    },
+    "Kai'Sa": {
+        "cost": 4,
+        "traits": [
+            "Assimilator",
+            "Void",
+            "Longshot"
+        ]
+    },
+    "Kalista": {
+        "cost": 4,
+        "traits": [
+            "Shadow Isles",
+            "Vanquisher"
+        ]
+    },
+    "Kennen": {
+        "cost": 3,
+        "traits": [
+            "Ionia",
+            "Yordle",
+            "Defender"
+        ]
+    },
+    "Kindred": {
+        "cost": 5,
+        "traits": [
+            "Eternal",
+            "Quickstriker"
+        ]
+    },
+    "Kobuko & Yuumi": {
+        "cost": 3,
+        "traits": [
+            "Yordle",
+            "Bruiser",
+            "Invoker"
+        ]
+    },
+    "Kog'Maw": {
+        "cost": 1,
+        "traits": [
+            "Void",
+            "Arcanist",
+            "Longshot"
+        ]
+    },
+    "LeBlanc": {
+        "cost": 3,
+        "traits": [
+            "Noxus",
+            "Invoker"
+        ]
+    },
+    "Leona": {
+        "cost": 3,
+        "traits": [
+            "Targon"
+        ]
+    },
+    "Lissandra": {
+        "cost": 4,
+        "traits": [
+            "Freljord",
+            "Invoker"
+        ]
+    },
+    "Loris": {
+        "cost": 3,
+        "traits": [
+            "Piltover",
+            "Warden"
+        ]
+    },
+    "Lucian & Senna": {
+        "cost": 5,
+        "traits": [
+            "Soulbound",
+            "Gunslinger"
+        ]
+    },
+    "Lulu": {
+        "cost": 1,
+        "traits": [
+            "Yordle",
+            "Arcanist"
+        ]
+    },
+    "Lux": {
+        "cost": 4,
+        "traits": [
+            "Demacia",
+            "Arcanist"
+        ]
+    },
+    "Malzahar": {
+        "cost": 3,
+        "traits": [
+            "Void",
+            "Disruptor"
+        ]
+    },
+    "Mel": {
+        "cost": 5,
+        "traits": [
+            "Noxus",
+            "Disruptor"
+        ]
+    },
+    "Milio": {
+        "cost": 3,
+        "traits": [
+            "Ixtal",
+            "Invoker"
+        ]
+    },
+    "Miss Fortune": {
+        "cost": 4,
+        "traits": [
+            "Bilgewater",
+            "Gunslinger"
+        ]
+    },
+    "Nasus": {
+        "cost": 4,
+        "traits": [
+            "Shurima"
+        ]
+    },
+    "Nautilus": {
+        "cost": 3,
+        "traits": [
+            "Bilgewater",
+            "Juggernaut",
+            "Warden"
+        ]
+    },
+    "Neeko": {
+        "cost": 2,
+        "traits": [
+            "Ixtal",
+            "Arcanist",
+            "Defender"
+        ]
+    },
+    "Nidalee": {
+        "cost": 4,
+        "traits": [
+            "Ixtal",
+            "Huntress"
+        ]
+    },
+    "Orianna": {
+        "cost": 2,
+        "traits": [
+            "Piltover",
+            "Invoker"
+        ]
+    },
+    "Ornn": {
+        "cost": 5,
+        "traits": [
+            "Blacksmith",
+            "Warden"
+        ]
+    },
+    "Poppy": {
+        "cost": 2,
+        "traits": [
+            "Demacia",
+            "Yordle",
+            "Juggernaut"
+        ]
+    },
+    "Qiyana": {
+        "cost": 1,
+        "traits": [
+            "Ixtal",
+            "Slayer"
+        ]
+    },
+    "Rek'Sai": {
+        "cost": 2,
+        "traits": [
+            "Void",
+            "Vanquisher"
+        ]
+    },
+    "Renekton": {
+        "cost": 4,
+        "traits": [
+            "Shurima"
+        ]
+    },
+    "Rift Herald": {
+        "cost": 4,
+        "traits": [
+            "Void",
+            "Bruiser"
+        ]
+    },
+    "Rumble": {
+        "cost": 1,
+        "traits": [
+            "Yordle",
+            "Defender"
+        ]
+    },
+    "Ryze": {
+        "cost": 5,
+        "traits": [
+            "Rune Mage"
+        ]
+    },
+    "Sejuani": {
+        "cost": 3,
+        "traits": [
+            "Freljord",
+            "Defender"
+        ]
+    },
+    "Seraphine": {
+        "cost": 4,
+        "traits": [
+            "Piltover",
+            "Disruptor"
+        ]
+    },
+    "Sett": {
+        "cost": 5,
+        "traits": [
+            "Ionia",
+            "The Boss"
+        ]
+    },
+    "Shen": {
+        "cost": 1,
+        "traits": [
+            "Ionia",
+            "Bruiser"
+        ]
+    },
+    "Shyvana": {
+        "cost": 5,
+        "traits": [
+            "Dragonborn",
+            "Juggernaut"
+        ]
+    },
+    "Singed": {
+        "cost": 4,
+        "traits": [
+            "Zaun",
+            "Juggernaut"
+        ]
+    },
+    "Sion": {
+        "cost": 2,
+        "traits": [
+            "Noxus",
+            "Bruiser"
+        ]
+    },
+    "Skarner": {
+        "cost": 4,
+        "traits": [
+            "Ixtal"
+        ]
+    },
+    "Sona": {
+        "cost": 1,
+        "traits": [
+            "Demacia",
+            "Invoker"
+        ]
+    },
+    "Swain": {
+        "cost": 4,
+        "traits": [
+            "Noxus",
+            "Arcanist",
+            "Juggernaut"
+        ]
+    },
+    "Sylas": {
+        "cost": 5,
+        "traits": [
+            "Chainbreaker",
+            "Arcanist",
+            "Defender"
+        ]
+    },
+    "T-Hex": {
+        "cost": 5,
+        "traits": [
+            "HexMech",
+            "Piltover",
+            "Gunslinger"
+        ]
+    },
+    "Tahm Kench": {
+        "cost": 5,
+        "traits": [
+            "Bilgewater",
+            "Glutton",
+            "Bruiser"
+        ]
+    },
+    "Taric": {
+        "cost": 4,
+        "traits": [
+            "Targon"
+        ]
+    },
+    "Teemo": {
+        "cost": 2,
+        "traits": [
+            "Yordle",
+            "Longshot"
+        ]
+    },
+    "Thresh": {
+        "cost": 5,
+        "traits": [
+            "Shadow Isles",
+            "Warden"
+        ]
+    },
+    "Tristana": {
+        "cost": 2,
+        "traits": [
+            "Yordle",
+            "Gunslinger"
+        ]
+    },
+    "Tryndamere": {
+        "cost": 2,
+        "traits": [
+            "Freljord",
+            "Slayer"
+        ]
+    },
+    "Twisted Fate": {
+        "cost": 2,
+        "traits": [
+            "Bilgewater",
+            "Quickstriker"
+        ]
+    },
+    "Vayne": {
+        "cost": 3,
+        "traits": [
+            "Demacia",
+            "Longshot"
+        ]
+    },
+    "Veigar": {
+        "cost": 4,
+        "traits": [
+            "Yordle",
+            "Arcanist"
+        ]
+    },
+    "Vi": {
+        "cost": 2,
+        "traits": [
+            "Piltover",
+            "Zaun",
+            "Defender"
+        ]
+    },
+    "Viego": {
+        "cost": 1,
+        "traits": [
+            "Shadow Isles",
+            "Quickstriker"
+        ]
+    },
+    "Volibear": {
+        "cost": 5,
+        "traits": [
+            "Freljord",
+            "Bruiser"
+        ]
+    },
+    "Warwick": {
+        "cost": 4,
+        "traits": [
+            "Zaun",
+            "Quickstriker"
+        ]
+    },
+    "Wukong": {
+        "cost": 4,
+        "traits": [
+            "Ionia",
+            "Bruiser"
+        ]
+    },
+    "Xerath": {
+        "cost": 5,
+        "traits": [
+            "Shurima",
+            "Ascendant"
+        ]
+    },
+    "Xin Zhao": {
+        "cost": 2,
+        "traits": [
+            "Demacia",
+            "Ionia",
+            "Warden"
+        ]
+    },
+    "Yasuo": {
+        "cost": 2,
+        "traits": [
+            "Ionia",
+            "Slayer"
+        ]
+    },
+    "Yone": {
+        "cost": 4,
+        "traits": [
+            "Ionia",
+            "Slayer"
+        ]
+    },
+    "Yorick": {
+        "cost": 2,
+        "traits": [
+            "Shadow Isles",
+            "Warden"
+        ]
+    },
+    "Yunara": {
+        "cost": 4,
+        "traits": [
+            "Ionia",
+            "Quickstriker"
+        ]
+    },
+    "Zaahen": {
+        "cost": 5,
+        "traits": [
+            "Darkin",
+            "Immortal"
+        ]
+    },
+    "Ziggs": {
+        "cost": 5,
+        "traits": [
+            "Zaun",
+            "Yordle",
+            "Longshot"
+        ]
+    },
+    "Zilean": {
+        "cost": 5,
+        "traits": [
+            "Chronokeeper",
+            "Invoker"
+        ]
+    },
+    "Zoe": {
+        "cost": 3,
+        "traits": [
+            "Targon"
+        ]
+    }
+}

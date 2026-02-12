@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TFT Set 16 Composition Generator</title>
+    <link rel="stylesheet" href="style.css?v=4">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>TFT Set 16 Composition Generator</h1>
+            <p>Generate optimal compositions based on selected emblems</p>
+        </header>
+
+        <div class="emblem-selector-section">
+            <h2>Select 3 Emblems</h2>
+            <div id="emblem-container" class="emblem-grid">
+                <!-- Emblems will be injected here via JS -->
+            </div>
+            <div class="selection-status">
+                <span id="selection-count">0</span>/3 Selected
+                <button id="generate-btn" disabled>Generate Comps</button>
+            </div>
+        </div>
+
+        <div id="comp-results">
+            <!-- Results will appear here -->
+        </div>
+
+
+    </div>
+
+    <script src="data.js?v=1"></script>
+    <script src="script.js?v=1"></script>
+</body>
+
+</html>
